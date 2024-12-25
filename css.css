@@ -1,0 +1,32 @@
+    @font-face {
+  font-family: "MontsBlack";
+  src: url("/monblack2-hnfgis3yr42hsxncklwed3982763452.ttf");
+  }
+  
+    @font-face {
+  font-family: "DomusLight";
+  src: url("/fonts/Domus_FONTFAM/hey_i_just_met_you_and_this_is_crazy/Domus Light.otf");
+  }
+    
+        @font-face {
+  font-family: "DomusExtrabold";
+  src: url("/fonts/Domus_FONTFAM/hey_i_just_met_you_and_this_is_crazy/Domus Extrabold.otf");
+  }
+  
+      h1 {
+  font-family: "DomusExtrabold";
+  font-weight: Normal;
+  }
+  
+      p {
+  font-family: "MontsBlack";
+  font-weight: Normal;
+  font-size:1vw;
+  }
+  
+  body { 
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px
+}
