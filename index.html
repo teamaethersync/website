@@ -1,0 +1,116 @@
+<!Very messily created by Rothisk, @RothiskGames on Twitter!>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Countdown - Build Studio</title>
+<link rel="icon" type="image/x-icon" href="Splats-Main-Images/Star_Favicon.png">
+<link rel="stylesheet" href="/css.css">
+ <style> type = "text/css">
+    @font-face {
+  font-family: "MontsBlack";
+  src: url("/monblack2-hnfgis3yr42hsxncklwed3982763452.ttf");
+  }
+  
+    @font-face {
+  font-family: "DomusLight";
+  src: url("/fonts/Domus_FONTFAM/hey_i_just_met_you_and_this_is_crazy/Domus Light.otf");
+  }
+  
+      @font-face {
+  font-family: "MontsRegtemp";
+  src: url("/monreg46593453rf794379rweh97rf327946723hr7eqw6r73wq.ttf");
+  }
+    
+        @font-face {
+  font-family: "DomusExtrabold";
+  src: url("/fonts/Domus_FONTFAM/hey_i_just_met_you_and_this_is_crazy/Domus Extrabold.otf");
+  }
+  
+      h1 {
+  font-family: "DomusExtrabold";
+  font-weight: Normal;
+  }
+  
+      p {
+  font-family: "MontsBlack";
+  font-weight: Normal;
+  font-size:1vw;
+  margin-top: 0px;
+  }
+  
+      p1000 {
+  font-family: "MontsRegtemp";
+  font-weight: Normal;
+  font-size:1vw;
+  margin-top: 0px;
+  }
+  
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            z-index: 1; 
+            position: fixed;
+            max-height: 100vh;
+            margin: 0px;
+        }
+      
+  body {
+    background-color: #FAFFF6;
+    background-image: url("/Splats-Main-Images/ShopBackground.png");
+    background-size: cover;
+}
+
+</style>
+<body>
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<section id="countdown-text">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <center><p style="font-size: 2.5vw; color: #FFFFFF; text-shadow: 2px 3px 3px #000000;">BUILD STUDIO RELEASE!</p> <p id="demo" style="font-size: 10vw; color: #FFFFFF; text-shadow: 5px 5px 8px #000000;"></p> <center><p1000 style="font-size: 2.5vw; color: #FFFFFF; text-shadow: 2px 3px 3px #000000;">Update Releases:</p1000> <center><p1000 style="font-size: 2.5vw; color: #FFFFFF; text-shadow: 2px 3px 3px #000000;"><strong>1ST JUNE 2025</strong> at <strong>20:00 BST</strong></p1000>
+</section>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jul 1, 2025 20:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + ":" + hours + ":"
+  + minutes + ":" + seconds + "";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+</body>
+</head>
+</html>
